@@ -28,8 +28,10 @@ const LinkItem = ({ href, path, target, children, ...props }) => {
       href={href}
       scroll={false}
       p={2}
-      bg={active ? 'grassTeal' : undefined}
-      color={active ? '#202023' : inactiveColor}
+      color={active ? '#7f523d' : inactiveColor}
+      _hover={{color: '#7f523d'}}
+      _dark={{ color: active ? '#ff63c3' : 'whiteAlpha.900', _hover: { color: '#ff63c3' }}}
+      fontWeight={active ? 'bold' : 'normal'}
       target={target}
       {...props}
     >
@@ -86,10 +88,10 @@ const Navbar = props => {
           <LinkItem href="/posts" path={path}>
             Posts
           </LinkItem>
-          <LinkItem href="https://uses.craftz.dog/">Uses</LinkItem>
+          
           <LinkItem
             target="_blank"
-            href="https://github.com/craftzdog/craftzdog-homepage"
+            href="https://github.com/JinmoKIM1012/jinmo_homepage"
             path={path}
             display="inline-flex"
             alignItems="center"
