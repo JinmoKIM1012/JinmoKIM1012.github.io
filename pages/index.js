@@ -50,6 +50,7 @@ const Home = () => (
           mt={{ base: 4, md: 0 }}
           ml={{ md: 6 }}
           textAlign="center"
+          display={{ base: 'none', md: 'block' }}
         >
           <Box
             borderColor="#f4ede4"
@@ -71,36 +72,42 @@ const Home = () => (
         </Box>
       </Box>
       
-      <Button
-        as={NextLink}
-        href="/Jinmo_Kim_CV.pdf"
-        scroll={false}
-        rightIcon={<ChevronRightIcon />}
-        color="white"
-        bg="#7f523d"
-        _hover={{ bg: '#a3694e' }}
-        _dark={{ bg: '#ff63c3', _hover: { bg: '#c24c96' } }}
-        leftIcon={<IoDocumentText />}
-        mb={6}
+      <Box
+        display="flex"
+        flexDirection={{ base: 'column', md: 'row' }}
+        alignItems="left"
       >
-        Curriculum Vitae
-      </Button>
-      <Button
-        as="a"
-        href="mailto:jmkim1012@snu.ac.kr"
-        scroll={false}
-        rightIcon={<ChevronRightIcon />}
-        color="white"
-        bg="#7f523d"
-        _hover={{ bg: '#a3694e' }}
-        _dark={{ bg: '#ff63c3', _hover: { bg: '#c24c96' } }}
-        leftIcon={<EmailIcon />}
-        ml={3}
-        mb={6}
-      >
-        Contact
-      </Button>
-
+        <Button
+          as={NextLink}
+          href="/Jinmo_Kim_CV.pdf"
+          scroll={false}
+          rightIcon={<ChevronRightIcon />}
+          color="white"
+          bg="#7f523d"
+          _hover={{ bg: '#a3694e' }}
+          _dark={{ bg: '#ff63c3', _hover: { bg: '#c24c96' } }}
+          leftIcon={<IoDocumentText />}
+          mb={{ base: 4, md: 6 }}
+          mt={{ base: 4, md: 0 }}
+        >
+          Curriculum Vitae
+        </Button>
+        <Button
+          as="a"
+          href="mailto:jmkim1012@snu.ac.kr"
+          scroll={false}
+          rightIcon={<ChevronRightIcon />}
+          color="white"
+          bg="#7f523d"
+          _hover={{ bg: '#a3694e' }}
+          _dark={{ bg: '#ff63c3', _hover: { bg: '#c24c96' } }}
+          leftIcon={<EmailIcon />}
+          ml={{ base: 0, md: 3 }}
+          mb={{ base: 4, md: 6 }}
+        >
+          Contact
+        </Button>
+      </Box>
       <Section delay={0.1}>
         <Heading as="h3" variant="section-title">
           About Me
