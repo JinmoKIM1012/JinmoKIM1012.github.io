@@ -113,16 +113,16 @@ const Home = () => (
           About Me
         </Heading>
         <Paragraph>
-          I am a M.S./Ph.D. integrated student at Seoul National University, advised by Prof. {' '}
+          I am an M.S./Ph.D. integrated student at Seoul National University, as advised by Prof. {' '}
           <Link as={NextLink} href="https://jaesik.info" passHref scroll={false} color={'#a3694e'} _hover={{ color: '#7f523d' }} _dark={{ color: '#ff63c3', _hover: { color: '#c24c96' }}}>
             Jaesik Park
           </Link>
-          . Also, I am a member of the <b>Visual & Geometric Intelligence Lab</b>. 
-          Previously, I completed by B.S. in Computer Science at Pohang University of Science and Technology (POSTECH).
+          . I am also a member of the <b>Visual & Geometric Intelligence Lab</b>. 
+          Previously, I completed my B.S. in Computer Science at Pohang University of Science and Technology (POSTECH).
         </Paragraph>
         <Paragraph>
           My research interests include <b>3D reconstruction</b>, <b>robotics</b>, and <b>3D scene understanding</b>.
-          Recently, I am especially focusing on feed-forward image-to-3D reconstruction.
+          Recently, I have been mainly focusing on feed-forward image-to-3D reconstruction.
         </Paragraph>
         
       </Section>
