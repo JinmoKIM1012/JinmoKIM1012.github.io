@@ -4,7 +4,7 @@ import { Flex, Text, Box, chakra } from '@chakra-ui/react'
 export const EduSection = ({ year, children }) => {
   return (
     <Flex align="flex-start" mb={2}>
-      <Box flexShrink={0} w="180px">
+      <Box flexShrink={0} w={{ base: '96px', md: '180px' }}>
         <Text fontWeight="bold" color="#7f523d" _dark={{ color: '#ff63c3' }}>
           {year}
         </Text>

@@ -7,7 +7,7 @@ export const FundSection = ({ year, children }) => {
       <Box flexGrow={1} mr={1}>
         {children}
       </Box>
-      <Box flexShrink={0} w="180px">
+      <Box flexShrink={0} w={{ base: '96px', md: '180px' }}>
         <Text fontWeight="bold" color="#7f523d" _dark={{ color: '#ff63c3' }} textAlign="right">
           {year}
         </Text>
