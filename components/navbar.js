@@ -114,19 +114,19 @@ const Navbar = props => {
                 _active={{ bg: '#a3694e' }}
               />
               <MenuList>
-                <MenuItem as={MenuLink} href="/" _hover={{ bg: '#cf8662' }}>
+                <MenuItem as={MenuLink} href="/" _hover={{ color: '#7f523d', fontWeight: 'bold', bg: 'transparent'}}>
                   About
                 </MenuItem>
-                <MenuItem as={MenuLink} href="/publications" _hover={{ bg: '#cf8662' }}>
+                <MenuItem as={MenuLink} href="/publications" _hover={{ color: '#7f523d', fontWeight: 'bold', bg: 'transparent'}}>
                   Publications
                 </MenuItem>
-                <MenuItem as={MenuLink} href="/awards" _hover={{ bg: '#cf8662' }}>
+                <MenuItem as={MenuLink} href="/awards" _hover={{ color: '#7f523d', fontWeight: 'bold', bg: 'transparent'}}>
                   Awards
                 </MenuItem>
                 <MenuItem
                   as={Link}
                   href="https://github.com/JinmoKIM1012/jinmo_homepage"
-                  _hover={{ bg: '#cf8662' }}
+                  _hover={{ color: '#7f523d', fontWeight: 'bold', bg: 'transparent'}}
                 >
                   Source
                 </MenuItem>
