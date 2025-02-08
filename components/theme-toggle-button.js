@@ -4,8 +4,8 @@ import { SunIcon, MoonIcon } from '@chakra-ui/icons'
 
 const ThemeToggleButton = () => {
   const { toggleColorMode } = useColorMode()
-  const bgColor = useColorModeValue('#000000', '#ff63c3')
-  const hoverBgColor = useColorModeValue('#515151', '#ff63c380')
+  const bgColor = useColorModeValue('transparent', '#ff63c3')
+  const hoverBgColor = useColorModeValue('#a3694e', '#ff63c380')
 
   return (
     <AnimatePresence mode="wait" initial={false}>
@@ -22,7 +22,7 @@ const ThemeToggleButton = () => {
           bg={bgColor}
           _hover={{ bg: hoverBgColor }} 
           icon={useColorModeValue(
-            <MoonIcon color="#ffac82" />,
+            <MoonIcon/>,
             <SunIcon />
           )}
           onClick={toggleColorMode}

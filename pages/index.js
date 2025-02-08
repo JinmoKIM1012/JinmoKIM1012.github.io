@@ -157,18 +157,11 @@ const Home = () => (
 
       <Section delay={0.3}>
         <Heading as="h3" variant="section-title">
-          I ♥
+          Skills
         </Heading>
         <Paragraph>
-          Art, Music,{' '}
-          <Link href="https://illust.odoruinu.net/" target="_blank">
-            Drawing
-          </Link>
-          , Playing Drums,{' '}
-          <Link href="https://500px.com/p/craftzdog" target="_blank">
-            Photography
-          </Link>
-          , Leica, Machine Learning
+          <b>Programming Language:</b> C/C++, Python<br />
+          <b>Tools:</b> PyTorch, TensorFlow, Open3D, OpenCV, Git(GitHub, GitLab), Docker<br />
         </Paragraph>
       </Section>
 

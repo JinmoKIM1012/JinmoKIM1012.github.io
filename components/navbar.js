@@ -79,14 +79,11 @@ const Navbar = props => {
           flexGrow={1}
           mt={{ base: 4, md: 0 }}
         >
-          <LinkItem href="/works" path={path}>
-            Works
+          <LinkItem href="/publications" path={path}>
+            Publications
           </LinkItem>
-          <LinkItem href="https://store.craftz.dog/" path={path}>
-            Wallpapers
-          </LinkItem>
-          <LinkItem href="/posts" path={path}>
-            Posts
+          <LinkItem href="/awards" path={path}>
+            Awards
           </LinkItem>
           
           <LinkItem
@@ -113,28 +110,25 @@ const Navbar = props => {
                 icon={<HamburgerIcon />}
                 variant="outline"
                 aria-label="Options"
+                _hover={{ bg: '#a3694e' }}
+                _active={{ bg: '#a3694e' }}
               />
               <MenuList>
-                <MenuItem as={MenuLink} href="/">
+                <MenuItem as={MenuLink} href="/" _hover={{ bg: '#cf8662' }}>
                   About
                 </MenuItem>
-                <MenuItem as={MenuLink} href="/works">
-                  Works
+                <MenuItem as={MenuLink} href="/publications" _hover={{ bg: '#cf8662' }}>
+                  Publications
                 </MenuItem>
-                <MenuItem as={MenuLink} href="https://store.craftz.dog/">
-                  Wallpapers
-                </MenuItem>
-                <MenuItem as={MenuLink} href="/posts">
-                  Posts
-                </MenuItem>
-                <MenuItem as={MenuLink} href="https://uses.craftz.dog/">
-                  Uses
+                <MenuItem as={MenuLink} href="/awards" _hover={{ bg: '#cf8662' }}>
+                  Awards
                 </MenuItem>
                 <MenuItem
                   as={Link}
-                  href="https://github.com/craftzdog/craftzdog-homepage"
+                  href="https://github.com/JinmoKIM1012/jinmo_homepage"
+                  _hover={{ bg: '#cf8662' }}
                 >
-                  View Source
+                  Source
                 </MenuItem>
               </MenuList>
             </Menu>
