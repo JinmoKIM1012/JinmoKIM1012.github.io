@@ -14,7 +14,7 @@ const Logo = () => {
         lineHeight="20px"
         padding="10px"
         _hover={{
-          '> svg': { transform: 'rotate(20deg)', transition: '200ms ease' }
+          '> svg': { transform: 'rotate(360deg)', transition: '1200ms ease' }
         }}
       >
         <CubeAltIcon />
